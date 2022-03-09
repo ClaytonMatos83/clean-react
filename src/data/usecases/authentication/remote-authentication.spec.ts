@@ -19,7 +19,7 @@ describe('RemoteAuthentication', () => {
     test('Should call HttpPostClient with correct URL', async () => {
         const url = 'other_url'
         const { sut, httpPostClientSpy } = makeSut(url)
-        sut.auth()
+        await sut.auth()
        expect(httpPostClientSpy.url).toBe(url)
     })
 })

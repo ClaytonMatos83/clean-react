@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "target": "ES3",
+      "target": "ES5",
       "lib": [
           "DOM",
           "DOM.Iterable",
@@ -21,7 +21,7 @@
       "noEmit": true,
     },
     "include": [
-        "src"
+      "src"
     ]   
   }
   
