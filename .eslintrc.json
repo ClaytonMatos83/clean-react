@@ -6,7 +6,7 @@
     },
     "extends": [
         "standard-with-typescript",
-        "plugin:react/recommended"
+        "plugin:react/recommended" 
     ],
     "plugins": ["react"],
     "parserOptions": {
@@ -19,3 +19,4 @@
         "react/jsx-uses-vars": "error"
     }
 }
+

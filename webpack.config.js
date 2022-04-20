@@ -25,25 +25,27 @@ module.exports = {
       use: [{
         loader: 'style-loader'
       }, {
-        loader: 'css-loader'
+        loader: 'css-loader',
+        options: {
+          modules: true
+        }
       }, {
         loader: 'sass-loader'
       }]
     }]
   },
   devServer: {
-    contentBase: './public',
+    static: './public',
     historyApiFallback: true,
     devMiddleware: {
       writeToDisk: true
-    },
-    externals: {
-
-      react: 'react',
-      'react-dom': 'ReactDOM'
-    },
-    plugins: [
-      new CleanWebpackPlugin()
-    ]
-  }
+    }
+  },
+  externals: {
+    react: 'React',
+    'react-dom': 'ReactDOM'
+  },
+  plugins: [
+    new CleanWebpackPlugin()
+  ]
 }
