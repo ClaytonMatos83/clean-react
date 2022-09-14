@@ -2,7 +2,7 @@ import React, {memo} from 'react'
 import styles from "./login-header-styles.scss"
 import Logo from "@/presentation/components/logo/logo"
 
-type Props = React.FormHTMLAttributes<HTMLElement>
+
 
 const LoginHeader: React.FC = () => {
   return (
